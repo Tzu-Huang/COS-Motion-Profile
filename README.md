@@ -1,5 +1,9 @@
 # VEX V5 Cosine Motion Profile
 
+<p align="center">
+  <img src='imgs/cos.png'>
+</p>
+
 This project implements a **Cosine-based motion profiling algorithm** for the VEX V5 robotics system using C++.  
 It allows the robot to move a precise distance smoothly and accurately while maintaining a stable heading through an integrated PID controller.
 
@@ -79,7 +83,7 @@ double mag = dis * 19.339 / 0.8265;  // distance to degrees
 ```
 
 ## Contributors
-- Zackery Liu
+- Tzu-Huang Liu (Zackery Liu)
 - Joseph Lin
 - Alex Lee
 - Benjamin Wu
