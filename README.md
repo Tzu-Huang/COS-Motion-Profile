@@ -28,7 +28,7 @@ showing how the cosine curve provides gradual acceleration and deceleration inst
 > The curve \( y(t) = 0.5 \cdot a \cdot (1 - \cos(\pi t / T)) \) defines position over time,  
 > producing smooth velocity and acceleration transitions.
 
-## ⚙️ Function Description
+## Function Description
 
 ### `double Cos_move(double dis, double v, double target, double m)`
 
@@ -39,7 +39,7 @@ showing how the cosine curve provides gradual acceleration and deceleration inst
 | `target` | Desired heading angle (degrees) |
 | `m` | Reserved for future tuning or scaling |
 
-### 🧩 Core Features
+### Core Features
 - Converts linear distance into encoder degrees  
 - Generates a **cosine velocity curve** over time:  
   \[
@@ -56,7 +56,7 @@ showing how the cosine curve provides gradual acceleration and deceleration inst
 
 ---
 
-## 🧩 Dependencies
+## Dependencies
 - **VEX V5 SDK / VEXcode Pro V5**
 - **C++17** or later  
 - Hardware:
@@ -65,11 +65,22 @@ showing how the cosine curve provides gradual acceleration and deceleration inst
 
 ---
 
-## 📈 PID and Motion Parameters
+## PID and Motion Parameters
 You can tune the control constants for your specific robot setup:
 
 ```cpp
 double Kp = 2.2;      // Proportional gain
 double Ki = 0.00001;  // Integral gain
 double Kd = 0.5;      // Derivative gain
+
+and adjust conversion constants for wheel circumference and gear ratio:
+```cpp
+double mag = dis * 19.339 / 0.8265;  // distance to degrees
+
+## Contributors
+- Zackery Liu
+- Joseph Lin
+- Alex Lee
+- Benjamin Wu
+
 
