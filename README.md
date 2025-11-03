@@ -72,10 +72,11 @@ You can tune the control constants for your specific robot setup:
 double Kp = 2.2;      // Proportional gain
 double Ki = 0.00001;  // Integral gain
 double Kd = 0.5;      // Derivative gain
-
+```
 and adjust conversion constants for wheel circumference and gear ratio:
 ```cpp
 double mag = dis * 19.339 / 0.8265;  // distance to degrees
+```
 
 ## Contributors
 - Zackery Liu
