@@ -1,7 +1,7 @@
 # VEX V5 Cosine Motion Profile
 
 <p align="center">
-  <img src='imgs/cos.png'>
+  <img src='img/cos.png'>
 </p>
 
 This project implements a **Cosine-based motion profiling algorithm** for the VEX V5 robotics system using C++.  
